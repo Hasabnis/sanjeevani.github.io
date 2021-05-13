@@ -1,0 +1,887 @@
+@import 'utility.css';
+:root{
+  --primary:#3dcfd3;
+  --dark:#161616;
+  --pure:#fff;
+  --ternary:#898989;
+  --light:#f2f2f2;
+  --border:#C0C0C0;
+}
+
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smootthing:antialiased;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  overflow-x: hidden !important;
+}
+
+header{
+  background-color: var(--light);
+  height: 50rem;
+  /* clip-path:polygon(0 0,100% 0,100% 100%,70% 81%,0 100%); */
+}
+
+.container{
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: auto;
+}
+
+
+header nav .left a{
+  color: var(--dark);
+  text-decoration: none;
+  margin-right: 2rem;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+header nav .left a:hover{
+  color:var(--primary);
+  transition: 0.5s;
+}
+
+header nav .brand img{
+    width: 100px;
+    padding-top:19px;
+}
+
+section.about .container > div.flex-1 img.skill_2{
+  display: none;
+}
+
+/* .menu-icon{
+  width: 30px;
+  cursor: pointer;
+  display:none;
+} */
+
+/* .hamberger img{
+  display: none;
+} */
+.small-logo img{
+  display:none;
+}
+
+
+.my-img img{
+ width: 400px;
+ margin-top:4rem;
+ margin-right:5rem;
+}
+
+.text{
+  margin-bottom:304px;
+  margin-top:4rem;
+}
+
+.text h2{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color:var(--primary);
+  font-weight: 100;
+}
+.text h1{
+  font-size: 3rem;
+  font-weight:100;
+  line-height: 1.2;
+  margin-bottom: 1.8rem;
+}
+
+.text h1 span{
+  color:var(--primary);
+  font-size:3rem;
+}
+
+.text p{
+  line-height: 1.9rem;
+  margin-bottom: 2rem;
+}
+
+/*About ne*/
+
+section{
+  padding: 2rem 0;
+}
+
+section.about .container > div.flex-1 img{
+  height:300px;
+  margin:2rem 2rem;
+  transform:translateX(-17px);
+}
+
+section.about h1{
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+section.about h1 span{
+  color: var(--primary);
+}
+
+section.about h3{
+  font-size:1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+section.about p{
+  font-family: 'Raleway', sans-serif;
+  color:var(--ternary);
+  line-height: 1.9;
+  font-size: 0.9rem;
+}
+
+.section-heading{
+  color:var(--secondary);
+  text-align: center;
+  margin-top:3rem;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+}
+
+.section-heading + p{
+  font-family: 'Raleway', sans-serif;
+  color: var(--dark);
+  line-height: 1.9;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+/* My services */
+section.services h1{
+  margin-bottom: 6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+section.services {
+  background: var(--light);
+  padding-bottom: 5rem;
+}
+
+section.services p{
+  font-family: 'Raleway', sans-serif;
+  color: var(--dark);
+  line-height: 2;
+  font-size: 0.9rem;
+}
+
+
+section.services h1 span{
+  color: var(--primary);
+}
+
+section.services .card-wrapper{
+    display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3,2fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+
+section.services .card-wrapper .card{
+  background: var(--pure);
+  padding:3rem 1rem;
+  position: relative;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+section.services .card-wrapper .card .dot{
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary);
+  /* border-radius: 50%; */
+  display: inline-block;
+}
+
+section.services .card-wrapper .card span img{
+  width:30px;
+  position: relative;
+  margin-top:0.8rem;
+}
+
+
+section.services .card-wrapper .card h2{
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.services .card-wrapper .card p{
+  font-size: 0.8rem;
+  color:var(--ternary);
+  line-height: 1.6;
+  /* text-align: justify; */
+}
+
+
+section.services .card-wrapper .card:hover{
+  background: var(--primary);
+}
+
+section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p{
+  color:var(--pure);
+}
+
+
+
+/* my WORK */
+section.work{
+  background: var(--pure);
+  padding-bottom: 5rem;
+}
+
+section.work h1{
+  margin-bottom: 6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+section.work .container h5{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+section.work h1 span{
+  color: var(--primary);
+}
+
+h4{
+  text-align: center;
+  color:var(--primary);
+  font-size: 18px;
+  margin-bottom:-33px;
+}
+
+#image-holder {
+  display: block;
+}
+
+
+/* section.work .portfolio-content .portfolio-filter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.work .portfolio-content .portfolio-filter li{
+  list-style: none;
+  padding: 8px 18px;
+  border:1px solid #c0c0c0;
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+section.work .portfolio-content .portfolio-filter li.active{
+  color:var(--primary);
+  border:1px solid var(--primary);
+} */
+
+section.work .card-wrapper{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+
+section.work .card-wrapper img{
+  border:2px solid var(--border);
+}
+
+
+section.work .card-wrapper .card{
+  position: relative;
+  /* height:250px; */
+}
+
+
+section.work .card-wrapper .card .overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background:rgba(61,207,211,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:var(--pure);
+  opacity:0;
+  transition:all 0.3s ease-in-out;
+}
+
+section.work .card-wrapper .card .overlay a{
+  color:var(--dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+section.work .card-wrapper .card img{
+  height: 100%;
+  width:100%;
+}
+
+section.work .card-wrapper .card:hover .overlay{
+  opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.modal-content{
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+.popup-content img.responsive_img{
+    position: absolute;
+  	max-width: 80%;
+  	top: 10%;
+  	left: 10%;
+  	border-radius: 3px;
+  	box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+  	border-radius: 3px;
+    margin:0 auto;
+}
+
+
+
+.overlay span{
+  margin-bottom: 10px;
+}
+
+#mybtn{
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border:3px solid var(--primary);
+  color:var(--primary);
+  cursor:pointer;
+  outline: none;
+  text-transform: uppercase;
+}
+
+
+/* The Close Button for Popup */
+.close-1 {
+  color: var(--pure);
+  position: fixed;
+  top:10px;
+  right:54px;
+  cursor:pointer;
+  font-size: 50px;
+}
+
+
+/*section: contact*/
+
+section.contact h1{
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+section.contact {
+  background: var(--light);
+  height: 600px;
+  position: relative;
+  top:50px;
+  margin-bottom: 4rem;
+}
+
+section.contact .container .contact-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+section.contact h1 span{
+  color: var(--primary);
+}
+
+
+section.contact .container .contact-wrapper .patch {
+  background: var(--pure);
+  width:50%;
+  height:50%;
+  position: absolute;
+  top:20%;
+  text-outline: 20px;%;
+  left:50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  margin-top:3rem;
+}
+
+
+section.contact .container .contact-wrapper .patch .add img, section.contact .container .contact-wrapper .patch .phone img, section.contact .container .contact-wrapper .patch .email img {
+  width:40px;
+  height: 40px;
+}
+
+section.contact .container .contact-wrapper .patch{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.contact .container .contact-wrapper .patch .add, .phone, .email{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    color:var(--primary);
+    text-align: center;
+}
+
+section.contact .container .contact-wrapper .patch .add>span>img{
+    fill:var(--primary);
+}
+
+
+.footer_1{
+  text-align: center;
+  margin-top: -9px;
+}
+
+
+
+
+
+
+
+
+
+/*---Responsive navigation at 1024px*/
+  .site-main-wrapper{
+    position: relative;
+  }
+
+  .hamberger{
+    position: absolute;
+    top:40px;
+    right: 80px;
+    z-index: 11;
+    background: none;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    display:none;
+  }
+
+  .hamberger img{
+    width:30px;
+  }
+
+  .mobile-nav{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:1001;
+    background: var(--primary);
+    width:100%;
+    height:100%;
+    padding: 2rem;
+    padding-top:5rem;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .open{
+    transform: translateX(0);
+  }
+
+  .close{
+    position: fixed;
+    top:30px;
+    right:80px;
+    border:none;
+    background: none;
+    outline:none;
+    cursor:pointer;
+  }
+
+  .close img{
+    width: 20px;
+    padding-top:1.2rem;
+  }
+
+  .mobile-nav ul{
+    list-style-type: none;
+    text-align: center;
+    line-height: 6rem;
+  }
+
+  .mobile-nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size:2rem;
+  }
+
+    .mobile-nav ul li a:hover{
+      color:var(--dark);
+      transition: all 0.5s;
+  }
+
+
+
+/*--Media query for rest of the content*/
+  @media (max-width:1024px) {
+      header #main-nav{
+      display:none;
+    }
+
+    .container{
+      height: auto;
+    }
+
+  .hamberger{
+    display:block;
+  }
+
+  section.about .container > div.flex-1 img{
+    display:none;
+  }
+
+  section.about .container > div.flex-1 img.skill_1{
+    display:block;
+  }
+
+    .text h1{
+      font-size: 1rem;
+      font-weight:100;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+
+    .text h1 span{
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .text{
+      padding-top:3rem;
+      text-align: justify;
+      margin-right: 3rem;
+    }
+
+    .text h2{
+      font-size: 1.8rem;
+    }
+
+    .text P{
+      font-size: 0.7rem;
+    }
+
+
+    header{
+      height:37rem;
+    }
+
+    header{
+      background-color: var(--light);
+      clip-path:polygon(0 0,100% 0,100% 100%,70% 100%,0 100%);
+    }
+
+    .small-logo img{
+      display:block;
+      width:100px;
+      margin-top: 1rem;
+    }
+
+    .my-img img{
+    width: 240px;
+    margin-bottom: 120px;
+    margin-top: 13rem;
+    margin-right: 2rem;
+    }
+
+    section.about p{
+      text-align: left;
+      margin-right: 1rem;
+    }
+
+    .about-me h3:before{
+      top: 687px;
+    }
+
+
+    section.about .flex-1 img.skills_ratio{
+       display:none;
+      }
+
+
+    section.services .card-wrapper{
+      grid-template-columns: repeat(2,2fr);
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
+      position: relative;
+      top: -2rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+
+    section.work .card-wrapper, .card-wrapper1{
+      margin-left: 2rem;
+      display: grid;
+      grid-template-columns: repeat(2,2fr);
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
+      position: relative;
+      top: -6rem;
+      margin-right: 2rem;
+    }
+
+
+    .container h4{
+      margin-bottom:57px;
+    }
+
+    section.contact{
+      top: -4rem;
+    }
+
+
+  section.contact .container .contact-wrapper .patch{
+    display:block;
+    height: 409px;
+    position: absolute;
+    top: 6rem;
+  }
+
+  .section-heading + p{
+    margin-right: 2rem;
+    text-align: center;
+  }
+
+  section.contact .container .contact-wrapper .patch .add, .phone, .email{
+    margin:3rem;
+  }
+
+  .footer_1{
+    margin-top:-7rem;
+  }
+
+}
+
+
+
+
+
+/*Media query for 576px  mobile screen*/
+
+@media(max-width:576px){
+
+  section.about .container > div.flex-1 img.skill_1{
+    display: none;
+  }
+
+  section.about .container > div.flex-1 img.skill_2{
+    display: block;
+  }
+
+  .hamberger img{
+    margin-right:-4rem;
+  }
+
+  .close img{
+    margin-right:-4rem;
+  }
+
+  .small-logo img{
+    width:75px;
+    margin-top:9px;
+  }
+
+  .hero{
+    flex-wrap: wrap-reverse;
+    position: absolute;
+    z-index: 1001;
+  }
+
+  .my-img img{
+    display: none;
+  }
+
+  .small-logo {
+    position: absolute;
+    top: 1rem;
+    width: 50px;
+}
+
+.text {
+    position: relative;
+    top: 6rem;
+    padding: 0 1rem;
+}
+
+
+.text h1{
+  margin-top: 2rem;
+}
+
+.text h2 {
+    font-size: 1.6rem;
+  }
+
+  .text P {
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+}
+
+.mob-inner-wrap{
+  flex-direction: column;
+}
+
+section.about h3{
+  margin-bottom: 0.3rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+
+section.about .container > div.flex-1 img {
+    display: block;
+    height: 300px;
+    margin: 2rem 0;
+    margin-right:-1.7rem;
+}
+
+
+section.about .container > div.flex-1 img.skill_2{
+  margin-top:3rem;
+  width: 100%;
+  height: 660px;
+  object-fit: contain;
+  margin-left: 1rem;
+}
+
+
+.flex-1 {
+    padding: 0 1rem;
+}
+
+  section.about h1{
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+
+section.services .card-wrapper{
+  grid-template-columns:repeat(1,2fr);
+}
+
+section.services h1{
+  margin-top:2rem;
+  margin-bottom: 7rem;
+  font-size: 1.6rem;
+  margin-top: 18px;
+  font-weight: 400;
+}
+.section-heading + p{
+  text-align: left;
+  padding: 0;
+  margin-right: -24px;
+  margin-bottom: 60px;
+}
+
+section.services{
+  margin-bottom: -4rem;
+}
+
+section.work h1{
+  margin-top:2rem;
+  margin-bottom:2rem;
+  margin-top:5px;
+}
+
+section.work .container h5{
+      font-size: 12px;
+      margin-top:4rem;
+}
+
+.container h4{
+  margin-left:2rem;
+}
+
+section.work .card-wrapper{
+  grid-row-gap: 0;
+}
+
+section.contact{
+  top:-8rem;
+}
+section.contact h1{
+  margin-top:1rem;
+}
+
+/* section.about p{
+  padding:0 0.1rem;
+} */
+
+section.contact .container .contact-wrapper .patch{
+  width: 400px;
+  height: 420px;
+  position: absolute;
+  top: 3rem;
+}
+
+section.contact h1{
+  margin-top:0.7rem;
+}
+
+.footer_1{
+  position: relative;
+  top: 61rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.site-main-wrapper{
+  height: 5528px;
+}
+
+}
