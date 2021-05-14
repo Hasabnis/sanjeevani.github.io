@@ -21,12 +21,12 @@ maximum-scale=1.0, user-scalable=no" />
 
   <nav class="mobile-nav">
     <button class="close"><img src="./img/close.png" alt=""></button>
-    <ul>
+    <ul class ="menu">
       <li><a href="#">Home</a></li>
       <li><a href="#about">About me</a></li>
-      <li><a href="#services">Skills</a></li>
+      <li><a href="#services">My Skills</a></li>
       <li><a href="#mywork">My work</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact">My Contact</a></li>
     </ul>
   </nav>
   <header>
@@ -40,9 +40,9 @@ maximum-scale=1.0, user-scalable=no" />
         <div>
           <a href="#">Home</a>
           <a href="#about">About me</a>
-          <a href="#services">Skills</a>
+          <a href="#services">My Skills</a>
           <a href="#mywork">My work</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact">My Contact</a>
         </div>
       </div>
     </nav>
@@ -155,7 +155,7 @@ maximum-scale=1.0, user-scalable=no" />
 
 <section id="mywork" class="work">
   <div class="container">
-    <h1 class="section-heading">My <span>Work Samples</span></h1>
+    <h1 class="section-heading">My <span>Work</span></h1>
     <p>My work encompasses various skills associated with usability including low and high fidelity wireframes, interactive prototypes, creating visual design mock-ups, and developed web and mobile applications. Independently problem-solving and leadership are my sub-skills. Mostly I've worked on Web and mobile applications. Ability to make a creative design and also can translate creative design concepts and ideas into reality using front end technology.</p>
     <h4>UI Development & Design Samples</h4>
     <!-- <div class="portfolio-content">
@@ -169,23 +169,23 @@ maximum-scale=1.0, user-scalable=no" />
 
 
   <div class="card-wrapper">
-	<div><h5>Dashboard</h5>
-    <div class="card">
-      <div class="overlay">
-        <button id="mybtn" onclick="myFunction17()">Click to open</button>
+    <div><h5>Dshboard</h5>
+      <div class="card">
+        <div class="overlay">
+
+        <button id="mybtn" onclick="document.getElementById('myModal4').style.display='block'">Click to open</button>
+        </div>
+        <img src="./mywork/17.png" alt="">
+  	  </div>
+        <!--popup-->
+        <div id="myModal4" class="modal">
+      <!--popup content-->
+        <div class="popup-content">
+          <span onclick="document.getElementById('myModal4').style.display='none'" class="close-1">&times;</span>
+          <img class="responsive_img" src="./mywork/17_big.png" alt="">
+        </div>
       </div>
-      <img src="./mywork/17.png" alt="">
-	  </div>
-      <!--popup-->
-      <!-- https://hasabnis.github.io/Dashboard/ -->
-      <!-- <div id="myModal2" class="modal"> -->
-    <!--popup content-->
-      <!-- <div class="popup-content">
-        <span onclick="document.getElementById('myModal2').style.display='none'" class="close-1">&times;</span>
-        <img class="responsive_img" src="./mywork/02_big.png" alt="">
-      </div> -->
-  <!-- </div> -->
-  </div>
+      </div>
 
   <div><h5>Bootstrap</h5>
     <div class="card">
