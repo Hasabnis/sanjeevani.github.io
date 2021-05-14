@@ -90,7 +90,7 @@ section.about .container > div.flex-1 img.skill_2{
   font-size: 2rem;
   margin-bottom: 0.5rem;
   color:var(--primary);
-  font-weight: 100;
+  font-weight: 300;
 }
 .text h1{
   font-size: 2rem;
@@ -156,6 +156,7 @@ section.about p{
 .section-heading + p{
   font-family: 'Raleway', sans-serif;
   color: var(--dark);
+
   line-height: 1.9;
   font-size: 1rem;
   margin-bottom: 4rem;
@@ -252,7 +253,7 @@ section.work{
 }
 
 section.work h1{
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
   font-size: 1.6rem;
   font-weight: 400;
 }
@@ -642,7 +643,8 @@ section.contact .container .contact-wrapper .patch .add>span>img{
 
     section.about p{
       text-align: left;
-      margin-right: 1rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
     }
 
     .about-me h3:before{
@@ -694,8 +696,10 @@ section.contact .container .contact-wrapper .patch .add>span>img{
   }
 
   .section-heading + p{
-    margin-right: 2rem;
-    text-align: center;
+    /* margin-right: 2rem; */
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    text-align: left;
   }
 
   section.contact .container .contact-wrapper .patch .add, .phone, .email{
@@ -757,6 +761,7 @@ section.contact .container .contact-wrapper .patch .add>span>img{
     position: relative;
     top: 6rem;
     padding: 0 1rem;
+    margin-left: 0.4rem;
 }
 
 
@@ -806,7 +811,7 @@ section.about .container > div.flex-1 img.skill_2{
 }
 
   section.about h1{
-    margin-bottom: 0.3rem;
+    margin-bottom: 1.3rem;
     text-align: center;
 }
 
@@ -823,8 +828,8 @@ section.services h1{
 }
 .section-heading + p{
   text-align: left;
-  padding: 0;
-  margin-right: -24px;
+  margin-right: 1.5rem;
+  margin-left: 2.5rem;
   margin-bottom: 60px;
 }
 
@@ -844,7 +849,7 @@ section.work .container h5{
 }
 
 .container h4{
-  margin-left:2rem;
+  margin-left:0rem;
 }
 
 section.work .card-wrapper{
@@ -875,7 +880,7 @@ section.contact h1{
 
 .footer_1{
   position: relative;
-  top: 61rem;
+  top: 67rem;
   font-size: 0.8rem;
   text-align: center;
 }
